@@ -517,9 +517,7 @@ const isValid = pass => {
    })
 
    return ((counter >= min && counter <= max)) ? true : false;
-
 }
-
 
 allPasswords.forEach(p => {
    counter += isValid(p) === false ? 1 : 0
@@ -528,3 +526,4 @@ allPasswords.forEach(p => {
 })
 
 console.log(result)
+
